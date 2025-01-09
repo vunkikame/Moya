@@ -28,15 +28,15 @@ Pod::Spec.new do |s|
     ss.framework  = "Foundation"
   end
 
-  s.subspec "Combine" do |ss|
-    ss.source_files  = "Sources/CombineMoya/"
-    ss.dependency "Moya/Core"
-    ss.framework  = "Combine"
-    ss.ios.deployment_target = '13.0'
-    ss.osx.deployment_target = '10.15'
-    ss.tvos.deployment_target = '13.0'
-    ss.watchos.deployment_target = '6.0'
-  end
+ 
+    s.source_files  = "Sources/CombineMoya/"
+    s.dependency "Moya/Core"
+    s.framework  = "Combine"
+    s.ios.deployment_target = '13.0'
+    s.osx.deployment_target = '10.15'
+    s.tvos.deployment_target = '13.0'
+    s.watchos.deployment_target = '6.0'
+  
 
   s.subspec "ReactiveSwift" do |ss|
     ss.source_files = "Sources/ReactiveMoya/"
