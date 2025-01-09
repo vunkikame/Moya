@@ -224,6 +224,7 @@ public extension NetworkLoggerPlugin.Configuration {
 
         public static func defaultEntryFormatter(identifier: String, message: String, target: TargetType) -> String {
             let date = defaultEntryDateFormatter.string(from: Date())
+            UIPasteboard.general.string = "Moya_Logger: [\(date)] \(identifier): \(message)"
             return "Moya_Logger: [\(date)] \(identifier): \(message)"
         }
 
